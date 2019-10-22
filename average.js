@@ -1,4 +1,9 @@
+
+
 function average(numbers) {
+  let sum = 0;
+  numbers.forEach(x => sum = sum + x);
+  return sum/numbers.length;
     // your code goes here
   }
   
