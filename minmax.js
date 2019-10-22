@@ -10,7 +10,14 @@ function max(numbers) {
 }
   
 function min(numbers) {
-  // your code here
+  let i = 1;
+  let min = numbers[0];
+  if (numbers.length===1) return min;
+  while (i<numbers.length){
+    min = min>numbers[i]?numbers[i] : min;
+    i++;
+  }
+  return min;
 }
   
 
