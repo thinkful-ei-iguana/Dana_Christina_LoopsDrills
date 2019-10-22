@@ -1,9 +1,23 @@
 function max(numbers) {
-  // your code here
+  let i = 1;
+  let max = numbers[0];
+  if (numbers.length===1) return max;
+  while (i<numbers.length){
+    max = max<numbers[i]?numbers[i] : max;
+    i++;
+  }
+  return max;
 }
   
 function min(numbers) {
-  // your code here
+  let i = 1;
+  let min = numbers[0];
+  if (numbers.length===1) return min;
+  while (i<numbers.length){
+    min = min>numbers[i]?numbers[i] : min;
+    i++;
+  }
+  return min;
 }
   
 
